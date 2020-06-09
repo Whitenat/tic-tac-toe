@@ -14,4 +14,10 @@ class Game
 			return false
 		end
 	end
+
+	def tie?
+		if self.over?
+			return true
+		end
+	end
 end
