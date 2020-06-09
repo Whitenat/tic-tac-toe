@@ -1,7 +1,9 @@
 require_relative 'board'
 
 class Game
-	def initialize()
-		@board = board.new
+	attr_accessor :board
+
+	def initialize
+		@board
 	end
 end
