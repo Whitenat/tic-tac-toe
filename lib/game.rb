@@ -1,4 +1,7 @@
 require_relative 'board'
 
-class Fixme
+class Game
+	def initialize()
+
+	end
 end
