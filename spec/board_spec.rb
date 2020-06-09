@@ -35,4 +35,10 @@ describe 'A Tic Tac Toe board' do
     expect(board.locations).to eq(locations)
   end
 
+  it 'can place a token at a given location' do
+  	board = Board.new
+  	board.place(:x, :top, :left)
+  	expect(board.locations[:top][:left]).to eq(:x)  
+  end
+
 end
