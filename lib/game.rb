@@ -17,7 +17,9 @@ class Game
 
 	def tie?
 		if self.over?
-			return true
+			if self.winner == nil
+				return true
+			end
 		end
 	end
 
