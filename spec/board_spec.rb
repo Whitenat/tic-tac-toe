@@ -25,4 +25,14 @@ describe 'A Tic Tac Toe board' do
   	expect(Board.new).to respond_to(:locations)
   end
 
+  it 'can be created with specific location values' do 
+  	locations = {
+      top: {left: :o, middle: nil, right: nil},
+      middle: {left: nil, middle: :x, right: nil},
+      bottom: {left: nil, middle: nil, right: nil}
+    }
+    board = Board.new(locations)
+    expect(board.locations).to eq(locations)
+  end
+
 end
