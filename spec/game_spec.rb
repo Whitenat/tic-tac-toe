@@ -80,7 +80,6 @@ describe 'A game of tic tac toe' do
     end
 
     it 'reports nil if there is no winner' do
-      skip
       game = Game.new
       expect(game.winner).to be_nil
     end
