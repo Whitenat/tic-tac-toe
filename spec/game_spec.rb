@@ -49,7 +49,6 @@ describe 'A game of tic tac toe' do
   end
 
   it 'is not initially over' do
-    skip
     game = Game.new
     expect(game).to_not be_over
   end

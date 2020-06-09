@@ -5,5 +5,10 @@ class Game
 
 	def initialize(board = 'FAKE')
 		@board = board
+		@over = false
+	end
+
+	def over?
+		return @over
 	end
 end
