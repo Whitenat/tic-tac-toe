@@ -47,4 +47,10 @@ describe 'A Tic Tac Toe board' do
   	expect(board.token_at(:top,:left)).to eq(:x)
 	end
 
+	it 'can reset to an empyty board' do
+		empty_board = Board.new
+		test_board = Board.new(midgame_board)
+		expect(test_board.reset).to eq(empty_board)
+	end
+
 end
