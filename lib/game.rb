@@ -22,6 +22,6 @@ class Game
 	end
 
 	def winner
-		return :x
+		return board.token_at(:top, :left)
 	end
 end
