@@ -39,7 +39,6 @@ describe 'A game of tic tac toe' do
   end
 
   it 'has a board' do
-    skip
     expect(Game.new).to respond_to(:board)
   end
 
