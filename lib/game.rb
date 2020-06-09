@@ -20,4 +20,8 @@ class Game
 			return true
 		end
 	end
+
+	def winner
+		return :x
+	end
 end
