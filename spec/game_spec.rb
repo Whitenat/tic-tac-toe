@@ -54,13 +54,11 @@ describe 'A game of tic tac toe' do
   end
 
   it 'is not over if the board is not full' do
-    skip
     game = Game.new(midgame_board)
     expect(game).to_not be_over
   end
 
   it 'is over when the board is full' do
-    skip
     expect(Game.new(full_board)).to be_over
   end
 
